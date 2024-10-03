@@ -29,7 +29,6 @@ public class GuessANumber {
         if(scan.hasNextDouble()){
             input = Integer.parseInt(scan.nextLine());
             // if so...
-            if(input == !String){
                 if(rnd_number == input){
                     System.out.println("you're right");
                 }else{
@@ -41,10 +40,9 @@ public class GuessANumber {
                     }
                 makeAGuess();
                 }
-            }
         }else{
             System.out.println("put in a number instead");
-
+             makeAGuess();
         }
     }
 
@@ -53,4 +51,3 @@ public class GuessANumber {
         // Help the user by revealing wether the guess was lower or higher than the target number
         // if input was not numeric show an error message and call this method recursively
     }
-}
